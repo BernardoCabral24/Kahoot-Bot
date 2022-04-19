@@ -52,7 +52,7 @@ if(int(option_kahoot)==1):
 
 #------------------------Chromedriver_Start-------------------------#
 def connec_kahoot(self,name_kahoot):
-    web = webdriver.Chrome("C://Users//steam//Desktop//Virus Lab//chromedriver",options=opt)
+    web = webdriver.Chrome("--PATH TO CHROME DRIVER--",options=opt)
     web.get("https://kahoot.it/v2/")
     pin_id = web.find_element_by_id("game-input").send_keys(kahoot_pin)
     pin_send_data_css_selector = web.find_element_by_xpath("/html/body/div/div[1]/div/div[3]/div[2]/main/div/form/button").click()
